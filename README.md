@@ -3,7 +3,9 @@ Q学习算法解决回合式任务
 ## 1. 问题描述
 假设一幢建筑里面有5个房间，房间之间通过门相连（如图1所示）。将这五个房间按照从0至4进行编号，且建筑的外围可认为是一个大的房间，编号为5。将机器人置于2号房间，利用Q学习算法获得一条使机器人从该房间撤离到建筑物外围的最优路径。  
 
-![image](https://github.com/user-attachments/assets/b304dc08-0b02-46c9-904d-a4555507fab7) 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b304dc08-0b02-46c9-904d-a4555507fab7" alt="image">
+</div>
 
 ## 2. 问题分析
 ### 2.1 符号系统
@@ -19,7 +21,11 @@ $\alpha$：学习率
 $Q(s,a)$：状态动作值函数  
 ### 2.2 环境处理
 本次实验采用了一个简单的建筑环境，由6个房间构成，其中0至4为内部房间，5为建筑外围。将房间结构转化为图结构（如图2所示），利于机器表示。  
-![image](https://github.com/user-attachments/assets/50438ad3-93fa-4630-85e0-cab162b37614)  
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/50438ad3-93fa-4630-85e0-cab162b37614" alt="image">
+</div>
+
 ```python
 # 定义房间连接关系
 graph = {
